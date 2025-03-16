@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
-    --color-primary: #2E4053;
-    --color-secondary: #2E4053;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #444444;
+    --color-primary: #F8FAFC;
+    --color-secundary: #C4C4C4;
+    --color-button-hover: #211951;
+    --color-buttons: #827397 ;
+    --color-result: #DDE6ED;
 }
 @keyframes hero-gradient-animation {
     0% {
@@ -502,6 +502,7 @@ body {
     box-sizing: border-box;
     
 }
+  
 
 body {
     height: 100vh;
@@ -539,17 +540,17 @@ body {
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
-    color: var(--color-white);
+    font-family:"Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-primary);
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--color-primary);
+    font-family:"Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-secundary);
     margin: 10px 0;
     text-align: center;
 }
@@ -569,6 +570,8 @@ body {
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 .button-container {
@@ -584,7 +587,7 @@ body {
     border: 2px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
+    font-family: "Press Start 2P", system-ui;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -597,30 +600,35 @@ button {
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: transparent;
+    color: var(--color-buttons);
     border-radius: 0 25px 25px 0;
+    font-family:"Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-button-hover);
 }
 
 /* Listas */
 ul {
-    list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-family:"Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-secundary);
+ 
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: var(--color-result);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -632,9 +640,12 @@ ul {
     align-items: center;
     width: 100%;
     padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
+    color: var(--color-buttons);
+    background-color: transparent;
     font-size: 16px;
+    font-family:"Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .button-draw img {
